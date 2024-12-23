@@ -1,0 +1,22 @@
+{
+  "name": "Playwright-testing-multi-env",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:qa": "cross-env ENV=qa pnpm playwright test",
+    "test:qa:th": "cross-env ENV=qa LANG=th pnpm playwright test",
+    "test:qa:en": "cross-env ENV=qa LANG=en pnpm playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.2",
+    "cross-env": "^7.0.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  }
+}
